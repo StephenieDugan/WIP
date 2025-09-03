@@ -60,6 +60,7 @@ MonoBehaviour:
   minRelativeSpeed: 0
   pairCooldownSeconds: 0.2
   spawnOffset: {x: 0, y: 2, z: 0}
+  rb: {fileID: 0}
 --- !u!33 &3258111108087556635
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -91,7 +92,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 76618f7490c40334fa7b685859587d2e, type: 2}
+  - {fileID: 2100000, guid: 38798b3fb1c39094dbb1c24dc7ebd43a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -195,6 +196,7 @@ GameObject:
   - component: {fileID: 5287248408654313296}
   - component: {fileID: 7248925196756646567}
   - component: {fileID: 5066365915309006256}
+  - component: {fileID: 6663720341978599011}
   m_Layer: 0
   m_Name: Blaser_Collide
   m_TagString: obj_2_col
@@ -247,7 +249,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!114 &5066365915309006256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +393,30 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 1
+--- !u!114 &6663720341978599011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689992741278781415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31554a3ed4c81e4688f8a25349a15e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combineWithTag: obj_1_col
+  myKey: 
+  combineWithKey: 
+  resultPrefab: {fileID: 4257412417454173071, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
+  particlePrefab: {fileID: 6856271455944258617, guid: a3fcc4d56d2ba404e80daceedb12e09e, type: 3}
+  destroyOriginals: 1
+  requireBothInitial: 1
+  isInitial: 1
+  minRelativeSpeed: 0
+  pairCooldownSeconds: 0.2
+  spawnOffset: {x: 0, y: 2, z: 0}
+  rb: {fileID: 0}
 --- !u!1 &7349667993634448629
 GameObject:
   m_ObjectHideFlags: 0
